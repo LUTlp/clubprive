@@ -1,2 +1,14 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+Bienvenue sur notre page du club le plus select (ssssssss)
+
+<h1> CLUB PRIVE </h1>
+
+  <h2>On n'accepte que les habitués !</h2>
+
+<% if logged_in? %>
+  <a href="<%= club_path%>"> Page du club, youhou ! </a>
+<% else %>
+  Veuillez vous enregistrer pour faire partie de notre club.
+<% end %>
+
+Pour s'enregistrer
+<a href="<%= signup_path%>"> Sign-up </a>

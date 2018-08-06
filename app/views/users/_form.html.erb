@@ -26,6 +26,12 @@
     <%= form.text_field :email %>
   </div>
 
+
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+
+        <%= f.label :password_confirmation, "Confirmation" %>
+        <%= f.password_field :password_confirmation %>
   <div class="actions">
     <%= form.submit %>
   </div>

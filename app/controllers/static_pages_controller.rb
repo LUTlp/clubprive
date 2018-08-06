@@ -3,6 +3,7 @@ class StaticPagesController < ApplicationController
   end
 
   def pageclub
+    @users = User.all
   end
-  
+
 end
