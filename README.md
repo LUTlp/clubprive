@@ -1,24 +1,29 @@
-# README
+## Club Privé
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ohé moussaillon.ne !
 
-Things you may want to cover:
+Si tu es un habitué des hauts fonds, ce club est fait pour toi !
 
-* Ruby version
+*L'application
+Après avoir cloné le repo
 
-* System dependencies
+    bundle install without--production
 
-* Configuration
+    rails db:migrate
 
-* Database creation
+Heroku
 
-* Database initialization
+Vous trouverez l'application hébergée sur Heroku au lien suivant : https://clubprivelutlp.herokuapp.com/
 
-* How to run the test suite
+*Le projet
 
-* Services (job queues, cache servers, search engines, etc.)
+Ne permettre qu'aux utilisateurs connectés de connaître les membres du club
 
-* Deployment instructions
+    Les utilisateurs qui s'inscrivent sont automatiquement connectés
+    Seuls les utilisateurs connectés :
+        voient la liste des utilisateurs inscrits
+    Contient  les tests en TDD
 
-* ...
+About
+
+Fait en France, par LUTlp, alias R.A.P.
