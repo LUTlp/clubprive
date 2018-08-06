@@ -5,8 +5,8 @@ Rails.application.routes.draw do
   get  '/signup',  to: 'users#new'
   get    '/login',   to: 'sessions#new', as: 'login'
   post   '/login',   to: 'sessions#create'
-  delete '/logout',  to: 'sessions#destroy'
-  post '/signup',  to: 'users#create'
+  delete '/logout',  to: 'sessions#destroy', as: 'logout'
+  post '/signup',  to: 'users#create', as: 'creationutilisateur'
    resources :users
 
 #   Prefix Verb   URI Pattern                                                                              Controller#Action

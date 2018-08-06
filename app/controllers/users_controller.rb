@@ -28,7 +28,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       log_in @user
-      flash[:success] = "Welcome to the Sample App!"
+      flash[:success] = "Bienvenue dans notre club privé !"
       redirect_to @user
     else
       render 'new'
@@ -56,7 +56,7 @@ class UsersController < ApplicationController
   redirect_to root_url
 
     end
-  
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
